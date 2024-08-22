@@ -1,0 +1,60 @@
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+/* form styling  */
+section{
+    display: flex;
+    flex-direction: row;
+}
+.banner, .form{
+    /* position: sticky; */
+    width: 100%;
+    
+}
+
+/* banner styling */
+.banner{
+    /* justify-content: center;
+    align-items: center;
+    align-content: center; */
+    text-align: center;
+    /* margin: 0px 100px; */
+
+}
+.banner .bg-image{
+    width: 500px;
+    height: 500px;
+    margin: 0px auto;
+}
+
+.banner h1{
+    font-size: 35px;
+    margin: 0px 0px 25px;
+}
+
+.banner nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.banner nav ul li{
+    list-style-type: none;
+    padding: 0px 5px;
+}
+.banner nav img{
+    height: 20px;
+    width: 20px;
+}
+.banner a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+
+
+.form >p{
+    text-align: end;
+}
