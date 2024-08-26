@@ -1,0 +1,62 @@
+.container {
+    /* background: red; */
+    padding: 0 0.5rem;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid green;
+    margin: 20px auto;
+}
+table,
+th,
+td {
+	border: 1px solid;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+table{
+    margin: 0 auto;
+}
+caption {
+	caption-side: bottom;
+	margin-block-start: 1em;
+    border-bottom: 10px;
+}
+th,
+td {
+	padding: 0 15px;
+	text-align: left;
+	line-height: 1.5;
+}
+td {
+    height: auto;
+	min-width: 150px;
+}
+.column-header {
+	height: 50px;
+}
+.scroll-hint {
+    font-weight: 600;
+    opacity: 0.7;
+}
+.scroll-hint > i {
+    vertical-align: middle;
+}
+
+@media screen and (min-width: 40rem) {
+	.responsive-table {
+		max-width: 900px;
+        margin-inline: auto;
+        border: 2px solid;
+        padding: 20px;
+	}
+    td {
+        height: 49px;
+    }
+    tbody > tr > th:first-of-type {
+        min-width: 180px;
+    }
+    .scroll-hint {
+        display: none;
+    }
+}

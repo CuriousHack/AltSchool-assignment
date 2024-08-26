@@ -16,22 +16,31 @@ section{
 
 /* banner styling */
 .banner{
-    /* justify-content: center;
-    align-items: center;
-    align-content: center; */
     text-align: center;
-    /* margin: 0px 100px; */
+    background: #fffcf8;
+    padding-top: 67px;
+    width: 45%;
+    height: 100vh;
+    position: fixed;
+    
 
 }
 .banner .bg-image{
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     margin: 0px auto;
 }
 
 .banner h1{
-    font-size: 35px;
-    margin: 0px 0px 25px;
+    /* font-size: 35px; */
+    /* margin: 0px 0px 25px; */
+    font-size: 2.1875rem;
+    line-height: 40px;
+    text-align: center;
+    margin: 0px auto;
+    margin-bottom: 25px;
+    letter-spacing: -.51px;
+    width: 60%;
 }
 
 .banner nav ul{
@@ -53,8 +62,212 @@ section{
     text-align: center;
 }
 
+/* mobile logo styling */
+.altlogo{
+    display: none;
+}
 
+/* form styling */
+.form{
+    position: absolute;
+    width: 45%;
+    left: 55%;
+    top: 0;
+    overflow: hidden;
+    padding-bottom: 2rem;
+    /* padding: 30px; */
+}
 
 .form >p{
     text-align: end;
+    padding: 20px;
+}
+
+  #main-form-container{
+    overflow-y:scroll;
+    height: 35rem;
+    margin-right: -1rem;
+    padding-left: 1rem;
+  }
+  
+  .text-parag {
+    text-align: right;
+    font-weight: 700;
+    padding: 2rem;
+  }
+  
+  
+  .text-parag-1{
+    line-height:2;
+    color: #5a5959d8;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    display: block;
+  }
+  
+  #main-form-grid-container {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 1.5rem;
+   padding-right: 7.5rem;
+  
+  }
+
+  input[type="text"],input[type="tel"],input[type="password"],input[type="date"],select,input[type="email"]{
+    width: 100%;
+    padding: 1rem 0.4rem;
+    border: 1px solid transparent;
+    border-radius: 0.4rem;
+    background-color: #f5f5f5;
+    font-size: 1rem;
+    margin-top: 0.7rem;
+    color: #000000b2;
+    outline: none;
+  }
+  
+  label{
+    font-size: 1rem;
+    color: #000000;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus,
+  input[type="date"]:focus,
+  input[type="tel"]:focus,
+  select:focus{
+    border: 1px solid #007bff;
+  }
+  
+  .full-length {
+    grid-column: 1 / span 2;
+  }
+
+  button {
+    width: 100%;
+    grid-column: 1 / span 2;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.4rem;
+    background-color: #6A6FF5;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s;
+  }
+  
+  .fa-solid{
+    color: white;
+    font-size: 1rem;
+    width: 7%;
+  }
+  
+  button:hover {
+    background-color: #6A6FF5;
+    opacity: 0.8;
+    box-shadow: 2px 6px 0 2px rgba(202, 196, 196, 0.164);
+    transition: all 0.3s;
+  }
+  .back{
+    background-color: #6A6FF5;
+    color: white;
+    /* box-shadow: 2px 6px 0 2px rgba(202, 196, 196, 0.164); */
+    transition: all 0.3s;
+    width: 20%;
+    margin: 0 auto;
+    padding: 1rem 1rem;
+    border-radius: 0.4rem;
+  }
+  .back:hover{
+    cursor: pointer;
+    opacity: 0.8;
+
+  }
+  .terms{
+   grid-column: 1 / span 2;
+   width: 70%;
+    color: #5a5959d8;
+    font-size: 1.1rem; 
+  }
+  .terms a{
+    color: #4b61d2;
+    text-decoration: none;
+  }
+  
+  /* End of form portal css */
+  
+  @media screen and (max-width: 768px) {
+
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* banner styling  */
+    .banner{
+      display: none;
+    }
+    .form{
+        width: 100%;
+        display: block;
+        /* top: 0; */
+        position: relative;
+        left: 0;
+    }
+
+    .altlogo{
+      display: block;
+      text-align: center;
+      margin-bottom: 0;
+      padding: -1rem;
+    }
+    .altlogo img{
+      width: 80px;
+      height: 80px;
+    }
+
+    .form >p{
+        text-align: center;
+        margin: -1rem;
+    }
+
+    #main-image-container {
+      display: none;
+    }
+    .text-parag {
+      text-align: center;
+    }
+    h2,.text-parag-1{
+      padding-left:1rem;
+    }
+    #main-grid-container {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    #main-form-grid-container {
+      padding-right:1rem;
+      padding-left: 1rem;
+    }
+    #main-form-container {
+     padding: 0;
+     margin: 0;
+     overflow-y: hidden;
+      height: 100%;
+    }
+    .terms{
+      width: 100%;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    #main-form-grid-container {
+        display: inline-block;
+        padding-bottom: 20px;
+    }
+    input[type="text"]:focus,input[type="email"]:focus,input[type="password"]:focus,input[type="date"]:focus,input[type="tel"]:focus,select:focus{
+        padding-bottom: 20px;
+      }
+    
+    
 }
