@@ -1,0 +1,64 @@
+/* navigation styling  */
+nav{
+    text-align: center;
+    padding: 10px 0px;
+    background-color: grey;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+nav a{
+    text-decoration: none;
+    padding: 0 20px;
+    text-transform: uppercase;
+    color: white;
+}
+nav a:hover, .active{
+    background-color: black;
+    padding: 10px 20px;
+}
+
+/* back to top button  */
+.top {
+    display: inline-block;
+    background-color: grey;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+  }
+
+  .top::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+  .top:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+
+  @media screen and (max-width:425px){
+    .bio-data img{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+    nav{
+        /* padding: 10px 5px;    */
+        width: 100%; 
+    }
+    nav a{
+        padding: 0 5px;
+    }
+}

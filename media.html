@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="assets/images/akande.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+
 
     <title>Akande</title>
 </head>
@@ -13,18 +15,19 @@
     <nav id="nav">
         <a href="/">Home</a>
         <a href="form.html">register</a>
-        <a href="about.html"  class="active">About</a>
+        <a href="media.html"  class="active">Media</a>
         <a href="table.html">Table</a>
 
 
     </nav>  
 
-    <h2>Media Element Existing In HTML</h2>
 
     <main>
+        <h2>Media Elements In HTML</h2>
         <section>
             <h2>Picture</h2>
             <picture>
+                <source media="(max-width: 320px)" srcset="assets/images/akande.jpg">
                 <source media="(max-width: 600px)" srcset="assets/images/kbtc22-single2.jpg">
                 <source media="(max-width: 1200px)" srcset="assets/images/kbtc22-single1.jpg">
                 <source media="(min-width: 1201px)" srcset="assets/images/kbtc22-single.jpg">
@@ -35,9 +38,9 @@
         <section>
             <h2>Video</h2>
             <video controls width="200" heidth="200">
-                <source src="../Asset/video/my video.mov" type="video/mp4">
-                <source src="../Asset/video/my video.mov" type="video/webm">
-                <source src="../Asset/video/my video.mov" type="video/ogg">
+                <source src="/assets/video/a-smiling-father.mp4" type="video/mp4">
+                <source src="/assets/video/a-smiling-father.mp4" type="video/webm">
+                <source src="/assets/video/a-smiling-father.mp4" type="video/ogg">
                 Your browser does not support the video tag.
             </video>
         </section>

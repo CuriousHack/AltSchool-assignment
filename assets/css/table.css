@@ -1,6 +1,5 @@
 .container {
-    /* background: red; */
-    padding: 0 0.5rem;
+    padding: 4rem;
     align-content: center;
     align-items: center;
     text-align: center;
@@ -43,6 +42,14 @@ td {
     vertical-align: middle;
 }
 
+@media screen and (max-width: 1025px){
+    .container{
+        border: none;
+        outline: none;
+    }
+}
+
+
 @media screen and (min-width: 40rem) {
 	.responsive-table {
 		max-width: 900px;
@@ -59,4 +66,24 @@ td {
     .scroll-hint {
         display: none;
     }
+}
+
+@media screen and (max-width: 425px) {
+    .container {
+        margin-top: 0.5rem;
+    }
+    table{
+        display: grid;
+        border: none;
+        width: 100%;
+    }th{
+        width: auto;
+    }
+    td{
+        display: grid;
+    }
+    caption{
+        display: none;
+    }
+    
 }
